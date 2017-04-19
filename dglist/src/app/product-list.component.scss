@@ -1,0 +1,27 @@
+.products {
+  width: 900px;
+  margin: auto;
+  overflow: auto;
+}
+
+.product {
+  float: left;
+  width: 300px;
+  text-align: center;
+  .title {
+    height: 44px;
+    font-size: 16px;
+  }
+  .image {
+    width: 240px;
+  }
+  .price {
+    margin: 5px 0;
+    font-size: 22px;
+  }
+}
+.empty-list {
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}

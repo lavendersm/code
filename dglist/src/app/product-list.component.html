@@ -1,0 +1,13 @@
+<div class="products">
+  <div class="product" *ngFor="let product of products">
+    <h2 class="title">{{ product.title }}</h2>
+    <img class="image" [src]="product.image" alt="{{ product.title }}">
+    <div class="price">{{ product.price }}</div>
+          <span>{{ '￥' + product.likes + ' 👍'}}</span>
+   <button (click)="like(product)">+1</button>
+
+  </div>
+   <div class="empty-list" *ngIf="!products || products.length === 0">
+   产品列表为空
+ </div>
+</div>
